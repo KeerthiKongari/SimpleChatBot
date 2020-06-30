@@ -8,10 +8,18 @@ print('What a great name you have, ' + name + '!')
 print('Let me guess your age.')
 print('Enter remainders of dividing your age by 3, 5 and 7.')
 
-# reading all remainders
-remainder_3 = int(input()) % 3
-remainder_5 = int(input()) % 5
-remainder_7 = int(input()) % 7
-your_age = (remainder_3 * 70 + remainder_5 * 21 + remainder_7 * 15) % 105
+rem3 = int(input())
+rem5 = int(input())
+rem7 = int(input())
 
-print(f"Your age is {your_age}; that's a good time to start programming!")
+age = (rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
+
+print("Your age is " + str(age) + "; that's a good time to start programming!")
+print('Now I will prove to you that I can count to any number you want.')
+
+# read a number and count to it here
+number = int(input())
+for i in range(0, number + 1):
+    print(i,"!")
+
+print('Completed, have a nice day!')
